@@ -1,10 +1,15 @@
+package model;
+
 import java.time.LocalDate;
 
-public abstract class Material implements Discount {
+public abstract class Material {
     private String id;
     private String name;
     private LocalDate manufacturingDate;
     private int cost;
+
+    public Material() {
+    }
 
     public Material(String id, String name, LocalDate manufacturingDate, int cost) {
         this.id = id;

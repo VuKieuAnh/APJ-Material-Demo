@@ -1,14 +1,19 @@
+package model;
+
 import java.time.LocalDate;
 
-public class CrispyFlour extends Material implements Discount {
+public class CrispyFlour extends Material{
     private double quantity;
+
+    public CrispyFlour() {
+    }
 
     public CrispyFlour(String id, String name, LocalDate manufacturingDate, int cost, double quantity) {
         super(id, name, manufacturingDate, cost);
         this.quantity = quantity;
     }
 
-    @Override
+//    @Override
     public double getRealMoney() {
         LocalDate today = LocalDate.now();
         if (today.isBefore(getExpiryDate())&&(

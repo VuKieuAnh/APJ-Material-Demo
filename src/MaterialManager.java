@@ -1,3 +1,7 @@
+import model.CrispyFlour;
+import model.Material;
+import model.Meat;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +34,7 @@ public class MaterialManager {
         for (Material a:materials
              ) {
             tonggiagoc += a.getAmount();
-            tonggiasaugiam += a.getRealMoney();
+//            tonggiasaugiam += a.getRealMoney();
         }
         double chenhlech = tonggiagoc - tonggiasaugiam;
         System.out.println(chenhlech);
